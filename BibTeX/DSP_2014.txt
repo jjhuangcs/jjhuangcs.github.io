@@ -1,0 +1,12 @@
+@inproceedings{huang0814_hybrid,
+  author={Huang, Jun-Jie and Hung, Kwok-Wai and Siu, Wan-Chi},
+  title={Hybrid DCT-Wiener-Based interpolation using dual MMSE estimator scheme},
+  booktitle={2014 19th International Conference on Digital Signal Processing (DSP'14)},
+  address={Hong Kong},
+  days={20--23},
+  month={August},
+  year={2014},
+  pages={748--753},
+  organization={IEEE},
+  keywords={image interpolation, image super-resolution, DCT, hybrid, minimum mean square error, self example}
+}

@@ -1,0 +1,11 @@
+@inproceedings{huang0317_ProSparseExt,
+  author={Huang, Jun-Jie and Dragotti, Pier Luigi},
+  title={ProSparse Extension: Prony's Based Sparse Pattern Recovery with Extended Dictionaries},
+  booktitle={2017 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP'17)},
+  address={New Orleans, USA},
+  days={5--9},
+  month={March},
+  year={2017},
+  organization={IEEE},
+  keywords={Sparse representation, Prony’s method, union of bases}
+}

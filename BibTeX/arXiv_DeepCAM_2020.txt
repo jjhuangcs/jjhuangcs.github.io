@@ -1,0 +1,6 @@
+@article{Huang2020DeepAM,
+  title={Learning Deep Analysis Dictionaries -- Part II: Convolutional Dictionaries},
+  author={Huang, Jun-Jie and Dragotti, Pier Luigi},
+  journal={arXiv preprint arXiv:2002.00022},
+  year={2020}
+}

@@ -1,0 +1,14 @@
+@article{huang0618_DenseCompletion,
+  author={Huang, Jun-Jie and Dragotti, Pier Luigi},
+  journal={IEEE Transactions on Image Processing},
+  title={Photo Realistic Image Completion via Dense Correspondence},
+  year={2018},
+  month={Nov}
+  volume={27},
+  number={11},
+  pages={5234--5247},
+  publisher={IEEE},
+  keywords={Image Completion; Dense Correspondence;
+Image Registration; EM Algorithm}, 
+  doi={10.1109/TIP.2018.2852488}
+}

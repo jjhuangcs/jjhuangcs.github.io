@@ -1,0 +1,12 @@
+@inproceedings{huang0515_Practical,
+  author={Huang, Jun-Jie and Siu, Wan-Chi},
+  title={Practical application of random forests for super-resolution imaging},
+  booktitle={2015 IEEE International Symposium on Circuits and Systems (ISCAS'15)},
+  address={Lisbon},
+  days={24--27},
+  month={May},
+  year={2015},
+  pages={2161--2164},
+  organization={IEEE},
+  keywords={image super-resolution, decision tree, random forests}
+}

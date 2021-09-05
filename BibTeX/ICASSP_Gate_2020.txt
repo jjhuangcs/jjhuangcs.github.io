@@ -1,0 +1,7 @@
+@inproceedings{liu20gate,
+  author={Liu, Tianrui and Huang, Jun-Jie and Dai, Tianhong and Ren, Guangyu and Stathaki, Tania},
+  title={Gated Multi-layer Convolutional Feature Extraction Network for Robust Pedestrian Detection},
+  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP'20)},
+  year={2020},
+  organization={IEEE},
+}

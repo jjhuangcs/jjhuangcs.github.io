@@ -1,0 +1,12 @@
+@inproceedings{huang1014_using,
+  author={Huang, Jun-Jie and Siu, Wan-Chi},
+  title={Using large color LBP in generalized hough transform},
+  booktitle={2014 IEEE International Conference on Image Processing (ICIP'14)},
+  address={Paris},
+  days={27--30},
+  month={October},
+  year={2014},
+  pages={1584--1588},
+  organization={IEEE},
+  keywords={object detection, local binary pattern, hough transform, colour}
+}

@@ -1,0 +1,7 @@
+@inproceedings{huang2021linn,
+  author={Huang, Jun-Jie and Dragotti, Pier Luigi},
+  title={{LINN:} Lifting Inspired Invertible Neural Networks for Image Denoising},
+  booktitle={European Signal Processing Conference (EUSIPCO) 2021},
+  year={2021},
+  organization={EURASIP},
+}

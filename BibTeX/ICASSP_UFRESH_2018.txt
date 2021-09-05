@@ -1,0 +1,12 @@
+@inproceedings{deng0418_UFRESH,
+  author={Deng, Xin and Huang, Jun-Jie and Liu, Mengying  and Dragotti, Pier Luigi},
+  title={U-FRESH: An FRI-based Single Image Super Resolution Algorithm and An Application in Image Compression},
+  booktitle={2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP'18)},
+  address={Calgary, Canada},
+  days={15--21},
+  month={March},
+  year={2018},
+  organization={IEEE},
+  keywords={single image super resolution, image
+compression, local linear regression}
+}

@@ -1,0 +1,11 @@
+@inproceedings{huang0717_SRHRF+,
+  author={Huang, Jun-Jie and Liu, Tianrui and Dragotti, Pier Luigi and Stathaki, Tania},
+  title={SRHRF+: Self-Example Enhanced Single Image Super-Resolution Using Hierarchical Random Forests},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshop on New Trends in Image Restoration and Enhancement},
+  address={Hawaii, USA},
+  days={21--26},
+  month={July},
+  year={2017},
+  organization={IEEE},
+  keywords={Image Super-Resolution, Random Forests, Self-similarity, Hierarchical}
+}

@@ -1,0 +1,11 @@
+@inproceedings{huang0717_STML,
+  author={Huang, Jun-Jie and Dragotti, Pier Luigi},
+  title={Sparse Signal Recovery Using Structured Total Maximum Likelihood},
+  booktitle={Sampling Theory and Applications, 12th International Conference (sampTA’2017)},
+  address={Tallinn, Estonia},
+  days={3--7},
+  month={July},
+  year={2017},
+  organization={IEEE},
+  keywords={Sparse representation, Finite Rate of Innovation, Structured Total Least Squares, Structured Total Maximum Likelihood}
+}

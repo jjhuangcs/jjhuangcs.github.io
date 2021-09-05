@@ -1,0 +1,10 @@
+@inproceedings{huang0719_SPARSFRINet,
+  author={Leung, Vincent Chi Hang and Huang, Jun-Jie and Dragotti, Pier Luigi},
+  title={Reconstruction of FRI Signals using Deep Neural Networks},
+  booktitle={The Signal Processing with Adaptive Sparse Structured Representations workshop (SPARS’2019)},
+  address={Toulouse, France},
+  days={1--4},
+  month={July},
+  year={2019},
+  keywords={Finite rate of innovation, super-resolution, deep learning}
+}

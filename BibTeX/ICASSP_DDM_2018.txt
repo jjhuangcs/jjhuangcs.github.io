@@ -1,0 +1,12 @@
+@inproceedings{huang0418_DDSR,
+  author={Huang, Jun-Jie and Dragotti, Pier Luigi},
+  title={A DEEP DICTIONARY MODEL FOR IMAGE SUPER-RESOLUTION},
+  booktitle={2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP'18)},
+  address={Calgary, Canada},
+  days={15--21},
+  month={March},
+  year={2018},
+  organization={IEEE},
+  keywords={Sparse Sparse representation, dictionary learning,
+sparse dictionary, deep learning}
+}

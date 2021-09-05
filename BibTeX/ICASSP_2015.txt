@@ -1,0 +1,12 @@
+@inproceedings{huang0415_fast,
+  author={Huang, Jun-Jie and Siu, Wan-Chi},
+  title={Fast image interpolation with decision tree},
+  booktitle={2015 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP'15)},
+  address={South Brisbane, QLD},
+  days={19--24},
+  month={April},
+  year={2015},
+  pages={1221--1225},
+  organization={IEEE},
+  keywords={image interpolation, image super-resolution, decision tree}
+}

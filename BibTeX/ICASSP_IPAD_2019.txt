@@ -1,0 +1,12 @@
+@inproceedings{huang0519_DDM_Key,
+  author={Huang, Jun-Jie and Dragotti, Pier Luigi},
+  title={A DEEP DICTIONARY MODEL TO PRESERVE AND DISENTANGLE KEY FEATURES IN A SIGNAL},
+  booktitle={2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP'19)},
+  address={Brighton, UK},
+  days={12--27},
+  month={May},
+  year={2019},
+  organization={IEEE},
+  keywords={Sparse Sparse representation, dictionary learning,
+sparse dictionary, deep learning}
+}

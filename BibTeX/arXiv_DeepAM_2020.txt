@@ -1,0 +1,6 @@
+@article{Huang2020DeepAM,
+  title={Learning Deep Analysis Dictionaries -- Part I: Unstructured Dictionaries},
+  author={Huang, Jun-Jie and Dragotti, Pier Luigi},
+  journal={arXiv preprint arXiv:2001.12010},
+  year={2020}
+}

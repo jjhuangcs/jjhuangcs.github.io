@@ -1,0 +1,11 @@
+@article{Qi1120_DeepPR,
+  author={Yu, Qi and Huang, Jun-Jie and Zhu, Jubo and Dragotti, Pier Luigi and Dai, Wei},
+  title={Deep Phase Retrieval: Analyzing Over-Parameterization in Phase Retrieval},
+  journal={Signal Processing},
+  volume={180},
+  pages={107866},
+  year={2021},
+  issn={0165-1684},
+  publisher={Elsevier},
+  doi={10.1016/j.sigpro.2020.107866}
+}

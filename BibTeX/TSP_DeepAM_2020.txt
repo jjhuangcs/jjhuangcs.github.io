@@ -1,0 +1,10 @@
+@ARTICLE{Huang2020DeepAM,
+	author={Huang, Jun-Jie and Dragotti, Pier Luigi},
+  	journal={IEEE Transactions on Signal Processing}, 
+  	title={Learning Deep Analysis Dictionaries for Image Super-Resolution}, 
+  	year={2020},
+  	volume={68},
+  	number={},
+  	pages={6633-6648},
+  	doi={10.1109/TSP.2020.3036902}
+}

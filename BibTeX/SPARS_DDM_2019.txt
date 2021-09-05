@@ -1,0 +1,11 @@
+@inproceedings{huang0719_SPARSDDM,
+  author={Huang, Jun-Jie and Dragotti, Pier Luigi},
+  title={A Deep Analysis Dictionary Model},
+  booktitle={The Signal Processing with Adaptive Sparse Structured Representations workshop (SPARS’2019)},
+  address={Toulouse, France},
+  days={1--4},
+  month={July},
+  year={2019},
+  keywords={Sparse Sparse representation, dictionary learning,
+sparse dictionary, deep learning}
+}

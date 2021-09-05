@@ -1,0 +1,14 @@
+@article{huang1215_learning,
+  author={Huang, Jun-Jie and Siu, Wan-Chi},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  title={Learning Hierarchical Decision Trees for Single Image Super-Resolution},
+  year={2017},
+  volume={27}, 
+  number={5}, 
+  pages={937-950}, 
+  publisher={IEEE},
+  keywords={decision trees;random forests;image super-resolution;hierarchial decision trees;model fusion}, 
+  doi={10.1109/TCSVT.2015.2513661}
+  ISSN={1051-8215}, 
+  month={May}
+}

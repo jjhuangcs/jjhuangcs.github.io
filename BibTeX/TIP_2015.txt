@@ -1,0 +1,13 @@
+@article{huang0615_fast,
+  author={Huang, Jun-Jie and Siu, Wan-Chi and Liu, Tian-Rui},
+  journal={IEEE Transactions on Image Processing},
+  title={Fast image interpolation via random forests},
+  year={2015},
+  month={June}
+  volume={24},
+  number={10},
+  pages={3232--3245},
+  publisher={IEEE},
+  keywords={decision trees;random forests;fast image interpolation;Linear regression;Image processing;image interpolation}, 
+  doi={10.1109/TIP.2015.2440751}
+}

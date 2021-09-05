@@ -1,0 +1,9 @@
+@article{liu2019coupled,
+  title={Coupled Network for Robust Pedestrian Detection with Gated Multi-Layer Feature Extraction and Deformable Occlusion Handling},
+  author={Liu, Tianrui and Luo, Wenhan and Ma, Lin and Huang, Jun-Jie and Stathaki, Tania and Dai, Tianhong},
+  journal={IEEE Transactions on Image Processing},
+  year={2021},
+  volume={30},
+  pages={754-766},
+  doi={10.1109/TIP.2020.3038371}
+}
