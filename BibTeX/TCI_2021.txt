@@ -1,0 +1,10 @@
+@ARTICLE{Su2021TCI,
+	author={Yan, Su and Huang, Jun-Jie and Daly, Nathan and Higgitt, Catherine and Dragotti, Pier Luigi},
+  	journal={IEEE Transactions on Signal Processing}, 
+  	title={When de Prony Met Leonardo: An Automatic Algorithm for Chemical Element Extraction From Macro X-Ray Fluorescence Data}, 
+  	year={2021},
+    volume={7},
+    number={},
+    pages={908-924},
+    doi={10.1109/TCI.2021.3102820}}
+}
