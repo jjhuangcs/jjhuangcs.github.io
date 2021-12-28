@@ -1,0 +1,10 @@
+@ARTICLE{Liu20213DSTUNet,
+	author={Liu, Tianrui and Meng, Qingjie and Huang, Jun-Jie and Vlontzos, Athanasios and Rueckert, Daniel and Kainz, Bernhard},
+  	journal={IEEE Transactions on Image Processing}, 
+  	title={Video Summarization through Reinforcement Learning with a 3D Spatio-Temporal U-Net}, 
+  	year={2021},
+  	volume={},
+  	number={},
+  	pages={},
+  	doi={}
+}
