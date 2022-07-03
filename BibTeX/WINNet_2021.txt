@@ -1,6 +1,10 @@
 @article{Huang2021WINNet,
-  title={WINNet: Wavelet-inspired Invertible Network for Image Denoising},
   author={Huang, Jun-Jie and Dragotti, Pier Luigi},
-  journal={arXiv preprint arXiv:2109.06381},
-  year={2021}
+  journal={IEEE Transactions on Image Processing}, 
+  title={WINNet: Wavelet-Inspired Invertible Network for Image Denoising}, 
+  year={2022},
+  volume={31},
+  number={},
+  pages={4377-4392},
+  doi={10.1109/TIP.2022.3184845}
 }
