@@ -1,0 +1,6 @@
+@article{huang2022durrnet,
+  title={DURRNet: Deep Unfolded Single Image Reflection Removal Network},
+  author={Huang, Jun-Jie and Liu, Tianrui and Yang, Zhixiong and Fu, Shaojing and Zhao, Wentao and Dragotti, Pier Luigi},
+  journal={arXiv preprint arXiv:2203.06306},
+  year={2022}
+}
