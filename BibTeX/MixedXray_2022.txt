@@ -1,0 +1,10 @@
+@ARTICLE{Pu2022MixedXRay,
+  author={Pu, Wei and Huang, Jun-Jie and Sober, Barak and Daly, Nathan and Higgitt, Catherine and Daubechies, Ingrid and Dragotti, Pier Luigi and Rodrigues, Miguel R. D.},
+  journal={IEEE Transactions on Image Processing}, 
+  title={Mixed X-Ray Image Separation for Artworks With Concealed Designs}, 
+  year={2022},
+  volume={31},
+  number={},
+  pages={4458-4473},
+  doi={10.1109/TIP.2022.3185488}
+}
