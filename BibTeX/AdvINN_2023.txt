@@ -1,0 +1,9 @@
+@inproceedings{Chen2023AdvINN,
+  author={Chen, Zihan and Wang, Ziyue and Huang, Jun-Jie and Zhao, Wentao and Liu, Xiao and Guan, Dejian},
+  title={Imperceptible Adversarial Attack via Invertible Neural Networks},
+  booktitle={Thirty-Seventh AAAI Conference on Artificial Intelligence (AAAI)}, 
+  year={2023},
+  pages={},
+  organization={AAAI},
+  doi={}
+}
