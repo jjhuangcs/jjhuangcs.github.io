@@ -3,51 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="msvalidate.01" content="BA96512114BADAE35E1DD8E9BE80803C">
-    <meta name="description" content="Jun-Jie Huang - Associate Professor at NUDT. Research interests: multi-modal processing, model-based deep learning, computer vision.">
+    <meta name="description" content="Jun-Jie Huang - Associate Professor at NUDT. Research in multi-modal processing, model-based deep learning, and computer vision.">
     <meta name="author" content="Jun-Jie Huang">
-    <meta name="keywords" content="Jun-Jie Huang, Junjie Huang, Imperial College London, NUDT, Computer Vision, Deep Learning">
-
+    <meta name="keywords" content="Jun-Jie Huang, Junjie Huang, J.J. Huang, Imperial College London, NUDT, National University of Defence Technology, Computer Vision, Deep Learning">
+    <meta name="msvalidate.01" content="BA96512114BADAE35E1DD8E9BE80803C">
     <title>Jun-Jie Huang | Associate Professor</title>
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --primary: #6366f1;
-            --primary-light: #818cf8;
-            --accent: #8b5cf6;
-            --accent-light: #a78bfa;
-            --bg: #0f172a;
-            --bg-secondary: #1e293b;
-            --bg-card: rgba(30, 41, 59, 0.6);
-            --bg-card-hover: rgba(30, 41, 59, 0.9);
-            --text: #f1f5f9;
-            --text-secondary: #94a3b8;
-            --text-muted: #64748b;
-            --border: rgba(148, 163, 184, 0.1);
-            --border-hover: rgba(148, 163, 184, 0.2);
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+            --primary: #667eea;
+            --primary-dark: #5a67d8;
+            --secondary: #764ba2;
+            --text: #1a1a2e;
+            --text-light: #4a5568;
+            --text-muted: #718096;
+            --bg: #fafafc;
+            --card: #ffffff;
+            --border: #e2e8f0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow: 0 4px 12px rgba(0,0,0,0.08);
+            --shadow-lg: 0 12px 32px rgba(0,0,0,0.12);
             --radius: 12px;
             --radius-sm: 8px;
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .light-mode {
-            --bg: #f8fafc;
-            --bg-secondary: #ffffff;
-            --bg-card: rgba(255, 255, 255, 0.8);
-            --bg-card-hover: rgba(255, 255, 255, 1);
-            --text: #1e293b;
-            --text-secondary: #475569;
-            --text-muted: #64748b;
-            --border: rgba(148, 163, 184, 0.15);
-            --border-hover: rgba(148, 163, 184, 0.3);
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
-            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
 
         * {
@@ -58,296 +41,196 @@
 
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 80px;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: var(--bg);
             color: var(--text);
             line-height: 1.7;
-            transition: background 0.3s, color 0.3s;
-            overflow-x: hidden;
-        }
-
-        /* Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: var(--bg); }
-        ::-webkit-scrollbar-thumb { background: var(--text-muted); border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
-
-        /* Selection */
-        ::selection { background: var(--primary); color: white; }
-
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 24px;
+            -webkit-font-smoothing: antialiased;
         }
 
         /* Navigation */
-        .navbar {
+        .nav {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            z-index: 1000;
-            background: rgba(15, 23, 42, 0.85);
+            z-index: 100;
+            background: rgba(255,255,255,0.85);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
             transition: var(--transition);
         }
 
-        .light-mode .navbar {
-            background: rgba(248, 250, 252, 0.85);
-        }
-
-        .navbar .container {
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 72px;
+            height: 64px;
         }
 
-        .nav-brand {
-            font-size: 1.25rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .nav-logo {
+            font-weight: 800;
+            font-size: 18px;
+            color: var(--text);
             text-decoration: none;
+            letter-spacing: -0.5px;
         }
 
-        .nav-menu {
+        .nav-logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
             display: flex;
-            gap: 8px;
+            gap: 32px;
             list-style: none;
         }
 
-        .nav-link {
-            color: var(--text-secondary);
+        .nav-links a {
             text-decoration: none;
-            font-size: 0.9rem;
+            color: var(--text-light);
+            font-size: 14px;
             font-weight: 500;
-            padding: 8px 16px;
-            border-radius: var(--radius-sm);
             transition: var(--transition);
             position: relative;
         }
 
-        .nav-link:hover, .nav-link.active {
-            color: var(--primary);
-            background: rgba(99, 102, 241, 0.1);
-        }
-
-        .nav-actions {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .theme-toggle {
-            background: none;
-            border: 1px solid var(--border);
-            color: var(--text-secondary);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
             transition: var(--transition);
         }
 
-        .theme-toggle:hover {
-            background: var(--bg-secondary);
+        .nav-links a:hover {
             color: var(--primary);
-            border-color: var(--primary);
         }
 
-        .menu-toggle {
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
             display: none;
             background: none;
             border: none;
-            color: var(--text);
             cursor: pointer;
             padding: 8px;
         }
 
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            padding-top: 72px;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
-            pointer-events: none;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 60px;
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-image {
-            position: relative;
-        }
-
-        .hero-image img {
-            width: 260px;
-            height: 260px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid var(--bg-secondary);
-            box-shadow: var(--shadow-lg);
+        .nav-toggle span {
             display: block;
-            margin: 0 auto;
-        }
-
-        .hero-image::before {
-            content: '';
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 290px;
-            height: 290px;
-            border: 2px dashed var(--border);
-            border-radius: 50%;
-            animation: spin 30s linear infinite;
-        }
-
-        @keyframes spin {
-            from { transform: translateX(-50%) rotate(0deg); }
-            to { transform: translateX(-50%) rotate(360deg); }
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(99, 102, 241, 0.1);
-            border: 1px solid rgba(99, 102, 241, 0.2);
-            color: var(--primary-light);
-            padding: 8px 16px;
-            border-radius: 100px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            margin-bottom: 20px;
-        }
-
-        .hero-badge .dot {
-            width: 8px;
-            height: 8px;
-            background: #22c55e;
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 12px;
-            background: linear-gradient(135deg, var(--text) 0%, var(--text-secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero .subtitle {
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            font-weight: 400;
-            margin-bottom: 24px;
-        }
-
-        .hero-bio {
-            color: var(--text-secondary);
-            font-size: 1rem;
-            line-height: 1.8;
-            margin-bottom: 32px;
-        }
-
-        .hero-bio a {
-            color: var(--primary-light);
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
+            width: 24px;
+            height: 2px;
+            background: var(--text);
+            margin: 5px 0;
             transition: var(--transition);
         }
 
-        .hero-bio a:hover {
-            border-bottom-color: var(--primary);
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 100px 24px 60px;
         }
 
-        .hero-cta {
+        /* Hero Section */
+        .hero {
             display: flex;
-            gap: 16px;
+            gap: 48px;
+            align-items: flex-start;
+            margin-bottom: 60px;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero-avatar {
+            flex-shrink: 0;
+        }
+
+        .hero-avatar img {
+            width: 170px;
+            height: 210px;
+            object-fit: cover;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+        }
+
+        .hero-avatar img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px rgba(102,126,234,0.2);
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-name {
+            font-size: 44px;
+            font-weight: 800;
+            letter-spacing: -1.5px;
+            margin-bottom: 8px;
+            line-height: 1.1;
+        }
+
+        .hero-title {
+            font-size: 18px;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .hero-affiliation {
+            color: var(--text-light);
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .hero-links {
+            display: flex;
+            gap: 12px;
             flex-wrap: wrap;
         }
 
         .btn {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            padding: 12px 28px;
-            border-radius: var(--radius-sm);
-            font-size: 0.95rem;
+            gap: 6px;
+            padding: 10px 22px;
+            border-radius: 24px;
+            font-size: 13px;
             font-weight: 600;
             text-decoration: none;
             transition: var(--transition);
-            cursor: pointer;
             border: none;
+            cursor: pointer;
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, var(--primary), var(--accent));
+            background: var(--text);
             color: white;
-            box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
         }
 
         .btn-primary:hover {
+            background: var(--primary);
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
+            box-shadow: 0 8px 20px rgba(102,126,234,0.3);
         }
 
         .btn-secondary {
-            background: var(--bg-secondary);
+            background: white;
             color: var(--text);
             border: 1px solid var(--border);
         }
@@ -355,875 +238,1130 @@
         .btn-secondary:hover {
             border-color: var(--primary);
             color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
         }
 
-        
+        /* Section Cards */
+        .section {
+            margin-bottom: 50px;
+            animation: fadeInUp 0.8s ease;
+            animation-fill-mode: both;
+        }
 
-            .hero-image {
-                order: -1;
+        .section:nth-child(2) { animation-delay: 0.1s; }
+        .section:nth-child(3) { animation-delay: 0.2s; }
+        .section:nth-child(4) { animation-delay: 0.3s; }
+        .section:nth-child(5) { animation-delay: 0.4s; }
+        .section:nth-child(6) { animation-delay: 0.5s; }
+
+        .section-title {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 28px;
+            background: linear-gradient(180deg, var(--primary), var(--secondary));
+            border-radius: 2px;
+        }
+
+        /* Bio Card */
+        .bio-card {
+            background: linear-gradient(135deg, #f8f9fc 0%, #f0f4ff 100%);
+            border-radius: var(--radius);
+            padding: 28px 32px;
+            border-left: 4px solid var(--primary);
+            font-size: 15px;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .bio-card strong {
+            color: var(--text);
+        }
+
+        /* News Items */
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .news-item {
+            display: flex;
+            gap: 16px;
+            align-items: baseline;
+            padding: 16px 20px;
+            background: var(--card);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            cursor: default;
+        }
+
+        .news-item:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow);
+            transform: translateX(4px);
+        }
+
+        .news-date {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 13px;
+            white-space: nowrap;
+            min-width: 70px;
+        }
+
+        .news-text {
+            color: var(--text-light);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .news-text strong {
+            color: var(--text);
+        }
+
+        .news-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-left: 4px;
+        }
+
+        /* Publications */
+        .pub-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .pub-item {
+            display: flex;
+            gap: 20px;
+            padding: 24px;
+            background: var(--card);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .pub-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+
+        .pub-thumb {
+            width: 130px;
+            height: 100px;
+            border-radius: var(--radius-sm);
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .pub-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .pub-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .pub-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .pub-authors {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .pub-authors strong {
+            color: var(--text-light);
+        }
+
+        .pub-meta {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .pub-venue {
+            font-size: 12px;
+            color: var(--primary);
+            font-weight: 600;
+            background: rgba(102,126,234,0.08);
+            padding: 4px 12px;
+            border-radius: 6px;
+        }
+
+        .pub-links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .pub-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Students Grid */
+        .student-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 16px;
+        }
+
+        .student-card {
+            padding: 18px;
+            background: var(--card);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .student-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .student-name {
+            font-weight: 600;
+            color: var(--text);
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .student-topic {
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .student-info {
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+
+        /* Awards */
+        .award-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .award-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 14px 18px;
+            background: var(--card);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .award-item:hover {
+            border-color: var(--primary);
+        }
+
+        .award-year {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 4px 14px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .award-text {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* Teaching Cards */
+        .teaching-grid {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .teaching-card {
+            padding: 20px 28px;
+            border-radius: var(--radius-sm);
+            min-width: 220px;
+            color: white;
+            transition: var(--transition);
+        }
+
+        .teaching-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .teaching-card h3 {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .teaching-card p {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 24px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Recruiting Banner */
+        .recruit-banner {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px 28px;
+            border-radius: var(--radius);
+            margin-bottom: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+
+        .recruit-banner p {
+            font-size: 15px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .recruit-banner .btn {
+            background: white;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .recruit-banner .btn:hover {
+            background: rgba(255,255,255,0.95);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
             }
-
-            .hero-image img {
-                width: 200px;
-                height: 200px;
-            }
-
-            .hero-image::before {
-                width: 230px;
-                height: 230px;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-cta {
-                justify-content: center;
-            }
-
-            
-
-            .pub-card {
-                grid-template-columns: 1fr;
-            }
-
-            .pub-thumb {
-                max-width: 300px;
+            to {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
 
+        /* Responsive */
         @media (max-width: 768px) {
-            .nav-menu {
-                position: fixed;
-                top: 72px;
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 64px;
                 left: 0;
                 right: 0;
-                background: var(--bg);
+                background: white;
                 flex-direction: column;
-                padding: 20px;
-                gap: 4px;
+                padding: 16px 24px;
+                gap: 16px;
+                box-shadow: var(--shadow);
                 border-bottom: 1px solid var(--border);
-                transform: translateY(-100%);
-                opacity: 0;
-                pointer-events: none;
-                transition: var(--transition);
             }
 
-            .nav-menu.active {
-                transform: translateY(0);
-                opacity: 1;
-                pointer-events: all;
+            .nav-links.active {
+                display: flex;
             }
 
-            .menu-toggle {
+            .nav-toggle {
                 display: block;
             }
 
-            .section {
-                padding: 60px 0;
+            .hero {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .hero-avatar img {
+                width: 140px;
+                height: 175px;
+            }
+
+            .hero-name {
+                font-size: 32px;
+            }
+
+            .hero-links {
+                justify-content: center;
+            }
+
+            .pub-item {
+                flex-direction: column;
+            }
+
+            .pub-thumb {
+                width: 100%;
+                height: 160px;
+            }
+
+            .container {
+                padding: 90px 16px 40px;
             }
 
             .section-title {
-                font-size: 2rem;
+                font-size: 22px;
             }
 
-            .hero h1 {
-                font-size: 2rem;
+            .recruit-banner {
+                text-align: center;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-name {
+                font-size: 26px;
             }
 
-            .students-grid {
+            .student-grid {
                 grid-template-columns: 1fr;
             }
 
             .teaching-grid {
-                grid-template-columns: 1fr;
+                flex-direction: column;
             }
 
-            .footer-content {
-                flex-direction: column;
-                text-align: center;
+            .teaching-card {
+                min-width: auto;
             }
         }
 
-        /* Print styles */
-        @media print {
-            .navbar, .theme-toggle, .menu-toggle, .hero-cta, .back-to-top {
-                display: none !important;
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text: #e2e8f0;
+                --text-light: #a0aec0;
+                --text-muted: #718096;
+                --bg: #0f172a;
+                --card: #1e293b;
+                --border: #334155;
             }
 
-            body {
-                background: white;
-                color: black;
+            .nav {
+                background: rgba(15,23,42,0.85);
+                border-bottom-color: rgba(255,255,255,0.05);
             }
 
-            .section {
-                padding: 20px 0;
-                page-break-inside: avoid;
+            .nav-logo {
+                color: var(--text);
+            }
+
+            .bio-card {
+                background: linear-gradient(135deg, #1e293b 0%, #1a1f35 100%);
+            }
+
+            .btn-secondary {
+                background: var(--card);
+                border-color: var(--border);
             }
         }
     </style>
 </head>
 <body>
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#home" class="nav-brand">Jun-Jie Huang</a>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#news" class="nav-link">News</a></li>
-                <li><a href="#awards" class="nav-link">Awards</a></li>
-                <li><a href="#students" class="nav-link">Students</a></li>
-                <li><a href="#publications" class="nav-link">Publications</a></li>
-                <li><a href="#talks" class="nav-link">Talks</a></li>
-                <li><a href="#teaching" class="nav-link">Teaching</a></li>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">JJ<span>.</span>Huang</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#students">Students</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#teaching">Teaching</a></li>
             </ul>
-            <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
-            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <main>
-        <!-- Hero / Home -->
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-grid">
-                    <div class="hero-image">
-                        <img src="./Jun-Jie Huang_files/junjiehuang.png" alt="Jun-Jie Huang">
-                    </div>
-                    <div class="hero-content">
-                        <div class="hero-badge">
-                            <span class="dot"></span>
-                            Available for Collaboration
-                        </div>
-                        <h1>Jun-Jie Huang</h1>
-                        <p class="subtitle">MPhil (PolyU), PhD, DIC (Imperial College London)</p>
-                        <div class="hero-bio">
-                            <p>I am an <strong>Associate Professor</strong> at the College of Computer Science and Technology, National University of Defense Technology (NUDT), Changsha, Hunan, China.</p>
-                            <p>I earned my Ph.D. (2019) at the Department of Electrical and Electronic Engineering, Imperial College London, under the supervision of <a href="http://www.commsp.ee.ic.ac.uk/~pld/" target="_blank">Professor Pier Luigi Dragotti</a>. I received the B.Eng. (Hons) degree (2013) with First Class Honours in Electronic Engineering from The Hong Kong Polytechnic University and the M.Phil. degree (2015) in Electronic and Information Engineering from the same university under the supervision of <a href="http://www.eie.polyu.edu.hk/~wcsiu/" target="_blank">Professor Wan-Chi Siu</a>.</p>
-                            <p>During 2019 – 2021, I was a postdoctoral research associate at Communications and Signal Processing Group, Electrical and Electronic Engineering Department, Imperial College London, advised by <a href="http://www.commsp.ee.ic.ac.uk/~pld/" target="_blank">Professor Pier Luigi Dragotti</a>.</p>
-                            <p>My research interests include <strong>multi-modal processing</strong>, <strong>model-based deep learning</strong>, and <strong>computer vision</strong>.</p>
-                            <p><strong>I have published over 70 papers in prestigious journals and conferences, including IEEE TPAMI, TIP, TNNLS, TSP, TCSVT, AAAI, NeurIPS, ACM MM.</strong> Full list available on <a href="https://scholar.google.com/citations?hl=en&user=Ci5AHCUAAAAJ" target="_blank">Google Scholar</a>.</p>
-                            <p style="margin-top: 16px; padding: 16px; background: rgba(99, 102, 241, 0.1); border-radius: var(--radius-sm); border-left: 4px solid var(--primary);"><strong>I am currently looking for highly motivated Master students. All interested candidates are welcome to apply. Kindly send your CV to me via email.</strong></p>
-                        </div>
-                        <div class="hero-cta">
-                            <a href="https://scholar.google.com/citations?hl=en&user=Ci5AHCUAAAAJ" target="_blank" class="btn btn-primary">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
-                                Google Scholar
-                            </a>
-                            <a href="mailto:jjhuang@nudt.edu.cn" class="btn btn-secondary">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                                Contact Me
-                            </a>
-                        </div>
-                        
-                    </div>
+    <div class="container">
+
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <div class="hero-avatar">
+                <img src="./Jun-Jie%20Huang_files/junjiehuang.png" alt="Jun-Jie Huang">
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-name">Jun-Jie Huang</h1>
+                <p class="hero-title">Associate Professor</p>
+                <p class="hero-affiliation">
+                    College of Computer Science and Technology<br>
+                    National University of Defense Technology (NUDT)<br>
+                    Changsha, Hunan, China
+                </p>
+                <div class="hero-links">
+                    <a href="https://scholar.google.com/citations?hl=en&user=Ci5AHCUAAAAJ" class="btn btn-primary" target="_blank">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        Google Scholar
+                    </a>
+                    <a href="https://github.com/jjhuangcs" class="btn btn-secondary" target="_blank">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                    <a href="mailto:j.j.huang123@qq.com" class="btn btn-secondary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        Email
+                    </a>
                 </div>
+            </div>
+        </section>
+
+        <!-- Recruiting Banner -->
+        <div class="recruit-banner">
+            <p>🎓 Currently looking for highly motivated Master students. All interested candidates are welcome to apply!</p>
+            <a href="mailto:j.j.huang123@qq.com" class="btn">Send CV →</a>
+        </div>
+
+        <!-- Bio -->
+        <section class="section">
+            <h2 class="section-title">About</h2>
+            <div class="bio-card">
+                <p>
+                    I earned my <strong>Ph.D. (2019)</strong> at the Department of Electrical and Electronic Engineering, 
+                    <strong>Imperial College London</strong>, under the supervision of 
+                    <a href="http://www.commsp.ee.ic.ac.uk/~pld/" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600;">Prof. Pier Luigi Dragotti</a>. 
+                    I received the <strong>B.Eng. (Hons, First Class, 2013)</strong> in Electronic Engineering from 
+                    <strong>The Hong Kong Polytechnic University</strong> and the <strong>M.Phil. (2015)</strong> under the supervision of 
+                    <a href="http://www.eie.polyu.edu.hk/~wcsiu/" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600;">Prof. Wan-Chi Siu</a>.
+                </p>
+                <p style="margin-top: 12px;">
+                    During 2019–2021, I was a postdoctoral research associate at Imperial College London, advised by Prof. Pier Luigi Dragotti.
+                </p>
+                <p style="margin-top: 12px;">
+                    <strong>Research Interests:</strong> Multi-modal processing, model-based deep learning, and computer vision.
+                </p>
+                <p style="margin-top: 12px;">
+                    <strong>Publications:</strong> 70+ papers in prestigious venues including IEEE TPAMI, TIP, TNNLS, TSP, TCSVT, AAAI, NeurIPS, ACM MM.
+                </p>
             </div>
         </section>
 
         <!-- What's New -->
-        <section id="news" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">What's New</h2>
-                    <p class="section-subtitle">Latest updates and achievements</p>
+        <section class="section" id="news">
+            <h2 class="section-title">What's New</h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <span class="news-date">2026-07</span>
+                    <span class="news-text">Two papers have been accepted by <strong>ACM MM 2026</strong> <span class="news-badge">CCF-A</span> 🎉</span>
                 </div>
-                <div class="news-timeline">
-                    <div class="news-item">
-                        <div class="news-dot"></div>
-                        <div class="news-content">
-                            <span class="news-date">2026-07</span>
-                            <p class="news-text">Two papers have been accepted by <strong>ACM MM 2026</strong> (CCF-A), congratulations!</p>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="news-dot"></div>
-                        <div class="news-content">
-                            <span class="news-date">2026-05</span>
-                            <p class="news-text">Three papers have been accepted by <strong>ICML 2026</strong> (CCF-A), congratulations!</p>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="news-dot"></div>
-                        <div class="news-content">
-                            <span class="news-date">2026-03</span>
-                            <p class="news-text">One paper has been accepted by <strong>IEEE T-PAMI</strong>, congratulations!</p>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="news-dot"></div>
-                        <div class="news-content">
-                            <span class="news-date">2026-03</span>
-                            <p class="news-text">Three papers have been accepted by <strong>ICME 2026</strong> (CCF-B), congratulations!</p>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="news-dot"></div>
-                        <div class="news-content">
-                            <span class="news-date">2025-11</span>
-                            <p class="news-text">Two papers have been accepted by <strong>AAAI 2026</strong> (CCF-A), congratulations!</p>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="news-dot"></div>
-                        <div class="news-content">
-                            <span class="news-date">2025-07</span>
-                            <p class="news-text">One paper on Video Summarization has been accepted by <strong>ACM MM 2025</strong> (CCF-A), congratulations to Yamiao!</p>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="news-dot"></div>
-                        <div class="news-content">
-                            <span class="news-date">2025-04</span>
-                            <p class="news-text">One paper on Multi-View Clustering has been accepted by <strong>IJCAI 2025</strong> (CCF-A), congratulations to all co-authors!</p>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="news-dot"></div>
-                        <div class="news-content">
-                            <span class="news-date">2025-03</span>
-                            <p class="news-text">One paper on Large Multi-modal Model for Network Traffic Analysis has been accepted by <strong>ACM CCS 2025</strong> (CCF-A)!</p>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="news-dot"></div>
-                        <div class="news-content">
-                            <span class="news-date">2025-03</span>
-                            <p class="news-text">Four papers have been accepted by <strong>IEEE ICME 2025</strong> (CCF-B)!</p>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="news-dot"></div>
-                        <div class="news-content">
-                            <span class="news-date">2025-03</span>
-                            <p class="news-text">One paper has been accepted by <strong>IEEE DSN 2025</strong> (CCF-B)!</p>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="news-dot"></div>
-                        <div class="news-content">
-                            <span class="news-date">2025-03</span>
-                            <p class="news-text">The journal version of our ICASSP'24 paper on single image reflection removal has been accepted by <strong>IEEE T-PAMI</strong> (CCF-A), congratulations to all co-authors!</p>
-                        </div>
-                    </div>
-                    <div class="news-item">
-                        <div class="news-dot"></div>
-                        <div class="news-content">
-                            <span class="news-date">2025-02</span>
-                            <p class="news-text">One paper has been accepted by <strong>IEEE T-FIS</strong> (CCF-A), congratulations Luming!</p>
-                        </div>
-                    </div>
+                <div class="news-item">
+                    <span class="news-date">2026-05</span>
+                    <span class="news-text">Three papers have been accepted by <strong>ICML 2026</strong> <span class="news-badge">CCF-A</span> 🎉</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2026-03</span>
+                    <span class="news-text">One paper has been accepted by <strong>IEEE T-PAMI</strong> 🎉</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2026-03</span>
+                    <span class="news-text">Three papers have been accepted by <strong>IEEE ICME 2026</strong> <span class="news-badge">CCF-B</span> 🎉</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025-11</span>
+                    <span class="news-text">Two papers have been accepted by <strong>AAAI 2026</strong> <span class="news-badge">CCF-A</span> 🎉</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025-07</span>
+                    <span class="news-text">One paper on Video Summarization has been accepted by <strong>ACM MM 2025</strong> <span class="news-badge">CCF-A</span>, congratulations to Yamiao!</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025-04</span>
+                    <span class="news-text">One paper on Multi-View Clustering has been accepted by <strong>IJCAI 2025</strong> <span class="news-badge">CCF-A</span>!</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025-03</span>
+                    <span class="news-text">One paper on Large Multi-modal Model for Network Traffic Analysis has been accepted by <strong>ACM CCS 2025</strong> <span class="news-badge">CCF-A</span>!</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025-03</span>
+                    <span class="news-text">Four papers have been accepted by <strong>IEEE ICME 2025</strong> <span class="news-badge">CCF-B</span>!</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025-03</span>
+                    <span class="news-text">One paper has been accepted by <strong>IEEE DSN 2025</strong> <span class="news-badge">CCF-B</span>!</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025-03</span>
+                    <span class="news-text">The journal version of our ICASSP'24 paper on single image reflection removal has been accepted by <strong>IEEE T-PAMI</strong> <span class="news-badge">CCF-A</span>!</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025-02</span>
+                    <span class="news-text">One paper has been accepted by <strong>IEEE T-FIS</strong> <span class="news-badge">CCF-A</span>, congratulations Luming!</span>
                 </div>
             </div>
         </section>
 
-        <!-- Awards -->
-        <section id="awards" class="section" style="background: var(--bg-secondary);">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Selected Awards</h2>
-                    <p class="section-subtitle">Recognition and honors</p>
-                </div>
-                <div class="awards-grid">
-                    <div class="award-card">
-                        <span class="award-year">2022</span>
-                        <h3 class="award-title">Top-notch Talent Support Program of NUDT</h3>
-                        <p class="award-desc">NUDT拔尖人才计划</p>
+        <!-- Selected Publications -->
+        <section class="section" id="publications">
+            <h2 class="section-title">Selected Publications</h2>
+            <div class="pub-list">
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <img src="./Jun-Jie%20Huang_files/TPAMI2025.png" alt="TPAMI 2025" onerror="this.style.display='none'; this.parentElement.innerHTML='TPAMI\'25';">
                     </div>
-                    <div class="award-card">
-                        <span class="award-year">2021</span>
-                        <h3 class="award-title">Hundred Talent Program of Hunan Province</h3>
-                        <p class="award-desc">湖南"百人计划"海外高层次引进人才</p>
-                    </div>
-                    <div class="award-card">
-                        <span class="award-year">2019</span>
-                        <h3 class="award-title">Chinese Government Award for Outstanding Self-financed Students Abroad</h3>
-                        <p class="award-desc">国家优秀自费留学生奖学金</p>
+                    <div class="pub-content">
+                        <h3 class="pub-title">A Lightweight Deep Exclusion Unfolding Network for Single Image Reflection Removal</h3>
+                        <p class="pub-authors"><strong>Jun-Jie Huang</strong>, Tianrui Liu, Zihan Chen, Xinwang Liu, Meng Wang, and Pier Luigi Dragotti</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TPAMI, 2025</span>
+                            <span class="pub-links">
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10915715" target="_blank">[PDF]</a>
+                                <a href="BibTeX/DExNet_2025.txt" target="_blank">[BibTeX]</a>
+                                <a href="https://github.com/jjhuangcs/DExNet" target="_blank">[Code]</a>
+                            </span>
+                        </div>
                     </div>
                 </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <img src="./Jun-Jie%20Huang_files/TIFS2025.png" alt="TIFS 2025" onerror="this.style.display='none'; this.parentElement.innerHTML='TIFS\'25';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">unFlowS: An Unsupervised Construction Scheme of Flow Spectrum for Network Traffic Detection</h3>
+                        <p class="pub-authors">Luming Yang, Yongjun Wang, Lin Liu, <strong>Jun-Jie Huang</strong>, Jiangyong Shi, and Shaojing Fu</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TIFS, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img src="./Jun-Jie%20Huang_files/TMM2025.png" alt="TMM 2025" onerror="this.style.display='none'; this.parentElement.innerHTML='TMM\'25';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Multi-view Clustering via Multi-stage Fusion</h3>
+                        <p class="pub-authors">Yu Gan, Yunning You, <strong>Jun-Jie Huang</strong>, Sen Xiang, Chang Tang, Wei Hu, and Shan An</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TMM, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <img src="./Jun-Jie%20Huang_files/TGRS2024.png" alt="TGRS 2024" onerror="this.style.display='none'; this.parentElement.innerHTML='TGRS\'24';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">DeMPAA: Deployable Multi-Mini-Patch Adversarial Attack for Remote Sensing Image Classification</h3>
+                        <p class="pub-authors"><strong>Jun-Jie Huang</strong>#, Ziyue Wang#, Tianrui Liu*, Wenhan Luo, Zihan Chen, Wentao Zhao*, and Meng Wang</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TGRS, 2024</span>
+                            <span class="pub-links">
+                                <a href="https://github.com/jjhuangcs/DeMPPA" target="_blank">[Code]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <img src="./Jun-Jie%20Huang_files/AGLLFA2024.png" alt="Neural Networks 2024" onerror="this.style.display='none'; this.parentElement.innerHTML='NN\'24';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Multi-view subspace clustering via adaptive graph learning and late fusion alignment</h3>
+                        <p class="pub-authors">Chuan Tang, Kun Sun, Chang Tang, Xiao Zheng, Xinwang Liu, <strong>Jun-Jie Huang</strong>, Wei Zhang</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">Neural Networks, 2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <img src="./Jun-Jie%20Huang_files/FRINet.png" alt="TSP 2023" onerror="this.style.display='none'; this.parentElement.innerHTML='TSP\'23';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Learning-based Reconstruction of FRI Signals</h3>
+                        <p class="pub-authors">Vincent C. H. Leung, <strong>Jun-Jie Huang</strong>, Yonina C. Eldar, Pier Luigi Dragotti</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TSP, 2023</span>
+                            <span class="pub-links">
+                                <a href="https://arxiv.org/pdf/2212.08758.pdf" target="_blank">[PDF]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);">
+                        <img src="./Jun-Jie%20Huang_files/FastDeconv.png" alt="TCI 2023" onerror="this.style.display='none'; this.parentElement.innerHTML='TCI\'23';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">A Fast Automatic Method for Deconvoluting Macro X-ray Fluorescence Data Collected from Easel Paintings</h3>
+                        <p class="pub-authors">Su Yan, <strong>Jun-Jie Huang</strong>, Herman Verinaz-Jadan, Nathan Daly, Catherine Higgit, and Pier Luigi Dragotti</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TCI, 2023</span>
+                            <span class="pub-links">
+                                <a href="https://arxiv.org/pdf/2210.17496.pdf" target="_blank">[PDF]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);">
+                        <img src="./Jun-Jie%20Huang_files/BITS.png" alt="BITS 2022" onerror="this.style.display='none'; this.parentElement.innerHTML='BITS\'22';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Revealing and Reconstructing Hidden or Lost Features in Art Investigation</h3>
+                        <p class="pub-authors">Barak Sober, Spike Bucklow, Nathan Daly, Ingrid Daubechies, Pier Luigi Dragotti, Catherine Higgit, <strong>Jun-Jie Huang</strong>, et al.</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE BITS the Information Theory Magazine, 2022</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <img src="./Jun-Jie%20Huang_files/WINNet.png" alt="TIP 2022" onerror="this.style.display='none'; this.parentElement.innerHTML='TIP\'22';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">WINNet: Wavelet-inspired Invertible Network for Image Denoising</h3>
+                        <p class="pub-authors"><strong>Jun-Jie Huang</strong>, and Pier Luigi Dragotti</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TIP, vol. 31, pp. 4377-4392, 2022</span>
+                            <span class="pub-links">
+                                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9807636" target="_blank">[PDF]</a>
+                                <a href="BibTeX/WINNet_2021.txt" target="_blank">[BibTeX]</a>
+                                <a href="https://github.com/jjhuangcs/WINNet" target="_blank">[Code]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <img src="./Jun-Jie%20Huang_files/MixedXRay.png" alt="TIP 2022" onerror="this.style.display='none'; this.parentElement.innerHTML='TIP\'22';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Mixed X-Ray Image Separation for Artworks with Concealed Designs</h3>
+                        <p class="pub-authors">Wei Pu#, <strong>Jun-Jie Huang#*</strong>, Barak Sober, Nathan Daly, Catherine Higgitt, Ingrid Daubechies, Pier Luigi Dragotti, and Miguel Rodigues</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TIP, vol. 31, pp. 4458-4473, 2022</span>
+                            <span class="pub-links">
+                                <a href="https://arxiv.org/abs/2201.09167" target="_blank">[PDF]</a>
+                                <a href="BibTeX/MixedXRay_2022.txt" target="_blank">[BibTeX]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img src="./Jun-Jie%20Huang_files/MLAM.png" alt="TNNLS 2022" onerror="this.style.display='none'; this.parentElement.innerHTML='TNNLS\'22';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Meta-learning based Alternating Minimization Algorithm for Non-convex Optimization</h3>
+                        <p class="pub-authors">Jingyuan Xia, Shengxi Li, <strong>Jun-Jie Huang*</strong>, Imad Jaimoukha, and Deniz Gunduz</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TNNLS, 2022</span>
+                            <span class="pub-links">
+                                <a href="https://arxiv.org/abs/2009.04899" target="_blank">[PDF]</a>
+                                <a href="BibTeX/MLAM_2022.txt" target="_blank">[BibTeX]</a>
+                                <a href="https://github.com/XiaGroup/MF_MLAM" target="_blank">[Code]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <img src="./Jun-Jie%20Huang_files/TIP_Vsum.png" alt="TIP 2022" onerror="this.style.display='none'; this.parentElement.innerHTML='TIP\'22';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Video Summarization through Reinforcement Learning with a 3D Spatio-Temporal U-Net</h3>
+                        <p class="pub-authors">Tianrui Liu, Qingjie Meng, <strong>Jun-Jie Huang</strong>, Athanasios Vlontzos, Daniel Rueckert and Bernhard Kainz</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TIP, vol. 31, pp. 1573-1586, 2022</span>
+                            <span class="pub-links">
+                                <a href="https://arxiv.org/pdf/2106.10528.pdf" target="_blank">[PDF]</a>
+                                <a href="BibTeX/TIP_3DSTUNet_2021.txt" target="_blank">[BibTeX]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <img src="./Jun-Jie%20Huang_files/TCI_.png" alt="TCI 2021" onerror="this.style.display='none'; this.parentElement.innerHTML='TCI\'21';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">When de Prony Met Leonardo: An Automatic Algorithm for Chemical Element Extraction from Macro X-ray Fluorescence Data</h3>
+                        <p class="pub-authors">Su Yan, <strong>Jun-Jie Huang*</strong>, Nathan Daly, Catherine Higgitt and Pier Luigi Dragotti</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TCI, vol. 7, pp. 908-924, 2021</span>
+                            <span class="pub-links">
+                                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9511278" target="_blank">[PDF]</a>
+                                <a href="BibTeX/TCI_2021.txt" target="_blank">[BibTeX]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <img src="./Jun-Jie%20Huang_files/DeepAM.png" alt="TSP 2020" onerror="this.style.display='none'; this.parentElement.innerHTML='TSP\'20';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Learning Deep Analysis Dictionaries for Image Super-Resolution</h3>
+                        <p class="pub-authors"><strong>Jun-Jie Huang</strong>, and Pier Luigi Dragotti</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TSP, vol. 68, pp. 6633-6648, 2020</span>
+                            <span class="pub-links">
+                                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9257106" target="_blank">[PDF]</a>
+                                <a href="BibTeX/TSP_DeepAM_2020.txt" target="_blank">[BibTeX]</a>
+                                <a href="https://github.com/jjhuangcs/DeepAM" target="_blank">[Code]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);">
+                        <img src="./Jun-Jie%20Huang_files/couple_overview.png" alt="TIP 2021" onerror="this.style.display='none'; this.parentElement.innerHTML='TIP\'21';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Coupled Network for Robust Pedestrian Detection with Gated Multi-Layer Feature Extraction and Deformable Occlusion Handling</h3>
+                        <p class="pub-authors">Tianrui Liu, Wenhan Luo, Lin Ma, <strong>Jun-Jie Huang*</strong>, Tania Stathaki and Tianhong Dai</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TIP, vol. 30, pp. 754-766, 2021</span>
+                            <span class="pub-links">
+                                <a href="https://arxiv.org/pdf/1912.08661.pdf" target="_blank">[PDF]</a>
+                                <a href="BibTeX/SP_DeepPR_2020.txt" target="_blank">[BibTeX]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);">
+                        <img src="./Jun-Jie%20Huang_files/DeepPR.png" alt="SP 2021" onerror="this.style.display='none'; this.parentElement.innerHTML='SP\'21';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Deep Phase Retrieval: Analyzing Over-Parameterization in Phase Retrieval</h3>
+                        <p class="pub-authors">Qi Yu, <strong>Jun-Jie Huang*</strong>, Jubo Zhu, Wei Dai and Pier Luigi Dragotti</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">Signal Processing, vol. 180, pp. 107866, 2021</span>
+                            <span class="pub-links">
+                                <a href="https://authors.elsevier.com/a/1c1DtbZX51JJc" target="_blank">[PDF]</a>
+                                <a href="BibTeX/SP_DeepPR_2020.txt" target="_blank">[BibTeX]</a>
+                                <a href="https://github.com/qy2116/DeepPR" target="_blank">[Code]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <img src="./Jun-Jie%20Huang_files/PRINCE.png" alt="TIP 2018" onerror="this.style.display='none'; this.parentElement.innerHTML='TIP\'18';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Photo Realistic Image Completion via Dense Correspondence</h3>
+                        <p class="pub-authors"><strong>Jun-Jie Huang</strong> and Pier Luigi Dragotti</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TIP, vol. 27, no. 11, pp. 5234-5247, 2018</span>
+                            <span class="pub-links">
+                                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8410011" target="_blank">[PDF]</a>
+                                <a href="BibTeX/TIP_Completion_2018.txt" target="_blank">[BibTeX]</a>
+                                <a href="https://youtu.be/C_s8sHjlx6E" target="_blank">[Video]</a>
+                                <a href="Demo/PRINCE_v1.0.zip" target="_blank">[Code]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <img src="./Jun-Jie%20Huang_files/Picture2.png" alt="TCSVT 2017" onerror="this.style.display='none'; this.parentElement.innerHTML='TCSVT\'17';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Learning Hierarchical Decision Trees for Single Image Super-Resolution</h3>
+                        <p class="pub-authors"><strong>Jun-Jie Huang</strong> and Wan-Chi Siu</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TCSVT, vol. 27, no. 5, pp. 937-950, 2017</span>
+                            <span class="pub-links">
+                                <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7368907" target="_blank">[PDF]</a>
+                                <a href="BibTeX/TCSVT_2016.txt" target="_blank">[BibTeX]</a>
+                                <a href="Demo/SRHDT.zip" target="_blank">[Code]</a>
+                                <a href="Demo/SRHDT_Results.xlsx" target="_blank">[Results]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-item">
+                    <div class="pub-thumb" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <img src="./Jun-Jie%20Huang_files/FIRF.png" alt="TIP 2015" onerror="this.style.display='none'; this.parentElement.innerHTML='TIP\'15';">
+                    </div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Fast Image Interpolation via Random Forests</h3>
+                        <p class="pub-authors"><strong>Jun-Jie Huang</strong>, Wan-Chi Siu and Tian-Rui Liu</p>
+                        <div class="pub-meta">
+                            <span class="pub-venue">IEEE TIP, vol. 24, no. 10, pp. 3232-3245, 2015</span>
+                            <span class="pub-links">
+                                <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7117405" target="_blank">[PDF]</a>
+                                <a href="BibTeX/TIP_2015.txt" target="_blank">[BibTeX]</a>
+                                <a href="http://www.eie.polyu.edu.hk/~wcsiu/softmodule/10/fast_image_interpolation.htm" target="_blank">[Project Page]</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
         <!-- Students -->
-        <section id="students" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Students</h2>
-                    <p class="section-subtitle">Current and former students</p>
+        <section class="section" id="students">
+            <h2 class="section-title">Current Students</h2>
+            <div class="student-grid">
+                <div class="student-card">
+                    <div class="student-name">Zihan Chen</div>
+                    <div class="student-topic">Multi-Task Image Restoration</div>
+                    <div class="student-info">PhD · 2024 – · Co-supervise with Prof. Wentao Zhao</div>
                 </div>
-                <div class="students-grid">
-                    <div class="student-card">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">ZC</div>
-                        <div class="student-info">
-                            <h4>Zihan Chen</h4>
-                            <p class="student-topic">Multi-Task Image Restoration</p>
-                            <p class="student-meta">PhD Student, 2024 –</p>
-                            <p class="student-supervisor">Co-supervise with Prof. Wentao Zhao</p>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">YW</div>
-                        <div class="student-info">
-                            <h4>Yankun Wang</h4>
-                            <p class="student-topic">Generative Flow</p>
-                            <p class="student-meta">PhD Student, 2024 –</p>
-                            <p class="student-supervisor">Co-supervise with Prof. Yongjun Wang</p>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">QY</div>
-                        <div class="student-info">
-                            <h4>Qian Yao</h4>
-                            <p class="student-topic">AIGC Detection</p>
-                            <p class="student-meta">PhD Student, 2024 –</p>
-                            <p class="student-supervisor">Co-supervise with Prof. Yongjun Wang</p>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">CH</div>
-                        <div class="student-info">
-                            <h4>Chenbo Huang</h4>
-                            <p class="student-topic">Object Re-identification</p>
-                            <p class="student-meta">PhD Student, 2024 –</p>
-                            <p class="student-supervisor">Co-supervise with Prof. Yuanxi Peng</p>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">YP</div>
-                        <div class="student-info">
-                            <h4>Yi Pan</h4>
-                            <p class="student-topic">Generative Adversarial Attack</p>
-                            <p class="student-meta">PhD Student, 2025 –</p>
-                            <p class="student-supervisor">Co-supervise with Prof. Wentao Zhao</p>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">MX</div>
-                        <div class="student-info">
-                            <h4>Maoyi Xiong</h4>
-                            <p class="student-topic">Diffusion Model for Image Fusion</p>
-                            <p class="student-meta">PhD Student, 2026 –</p>
-                            <p class="student-supervisor">Co-supervise with Prof. Wentao Zhao</p>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">BM</div>
-                        <div class="student-info">
-                            <h4>Boya Miao</h4>
-                            <p class="student-topic">Test-Time Training</p>
-                            <p class="student-meta">PhD Student, 2024 –</p>
-                            <p class="student-supervisor">Co-supervise with Prof. Xuejun Yang, Prof. Wenjing Yang</p>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">PY</div>
-                        <div class="student-info">
-                            <h4>Peiyao Yu</h4>
-                            <p class="student-topic">All in One Image Restoration</p>
-                            <p class="student-meta">Master Student, 2025 –</p>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">WJ</div>
-                        <div class="student-info">
-                            <h4>Wenjun Jia</h4>
-                            <p class="student-topic">Multi-Modal Fusion</p>
-                            <p class="student-meta">Master Student, 2025 –</p>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">XS</div>
-                        <div class="student-info">
-                            <h4>Xiangshuai Song</h4>
-                            <p class="student-topic">Clustering-inspired Deep Architecture</p>
-                            <p class="student-meta">Master Student, 2025 –</p>
-                        </div>
-                    </div>
-                    <div class="student-card">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">GL</div>
-                        <div class="student-info">
-                            <h4>Ge Luo</h4>
-                            <p class="student-topic">Model-inspired Network</p>
-                            <p class="student-meta">PhD Student, 2025 –</p>
-                            <p class="student-supervisor">Co-supervise with Prof. Wentao Zhao</p>
-                        </div>
-                    </div>
+                <div class="student-card">
+                    <div class="student-name">Yankun Wang</div>
+                    <div class="student-topic">Generative Flow</div>
+                    <div class="student-info">PhD · 2024 – · Co-supervise with Prof. Yongjun Wang</div>
                 </div>
-
-                <div class="section-header" style="margin-top: 3rem;">
-                    <h3 style="font-size: 1.5rem; color: var(--text-secondary);">Former Students</h3>
+                <div class="student-card">
+                    <div class="student-name">Qian Yao</div>
+                    <div class="student-topic">AIGC Detection</div>
+                    <div class="student-info">PhD · 2024 – · Co-supervise with Prof. Yongjun Wang</div>
                 </div>
-                <div class="students-grid">
-                    <div class="student-card former">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);">XL</div>
-                        <div class="student-info">
-                            <h4>Xiao Liu</h4>
-                            <p class="student-topic">Graph Adversarial Attack</p>
-                            <p class="student-meta">PhD, 2019 – 2024</p>
-                            <p class="student-supervisor">Co-supervise with Prof. Wentao Zhao</p>
-                        </div>
-                    </div>
-                    <div class="student-card former">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);">ZW</div>
-                        <div class="student-info">
-                            <h4>Ziyue Wang</h4>
-                            <p class="student-topic">Physical World Adversarial Patch Attack for Remote Sensing Images</p>
-                            <p class="student-meta">Master, 2021 – 2023</p>
-                            <p class="student-supervisor">Co-supervise with Prof. Wentao Zhao</p>
-                        </div>
-                    </div>
-                    <div class="student-card former">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);">ZC</div>
-                        <div class="student-info">
-                            <h4>Zihan Chen</h4>
-                            <p class="student-topic">Image Hiding based on Invertible Neural Network</p>
-                            <p class="student-meta">Master, 2021 – 2023</p>
-                            <p class="student-supervisor">Co-supervise with Prof. Wentao Zhao</p>
-                        </div>
-                    </div>
-                    <div class="student-card former">
-                        <div class="student-avatar" style="background: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);">YW</div>
-                        <div class="student-info">
-                            <h4>Yankun Wang</h4>
-                            <p class="student-topic">Website Fingerprinting Defense for Tor Network</p>
-                            <p class="student-meta">Master, 2021 – 2023</p>
-                            <p class="student-supervisor">Co-supervise with Prof. Yongjun Wang</p>
-                        </div>
-                    </div>
+                <div class="student-card">
+                    <div class="student-name">Chenbo Huang</div>
+                    <div class="student-topic">Object Re-identification</div>
+                    <div class="student-info">PhD · 2024 – · Co-supervise with Prof. Yuanxi Peng</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-name">Yi Pan</div>
+                    <div class="student-topic">Generative Adversarial Attack</div>
+                    <div class="student-info">PhD · 2025 – · Co-supervise with Prof. Wentao Zhao</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-name">Maoyi Xiong</div>
+                    <div class="student-topic">Diffusion Model for Image Fusion</div>
+                    <div class="student-info">PhD · 2026 – · Co-supervise with Prof. Wentao Zhao</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-name">Boya Miao</div>
+                    <div class="student-topic">Test-Time Training</div>
+                    <div class="student-info">PhD · 2024 – · Co-supervise with Prof. Xuejun Yang, Prof. Wenjing Yang</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-name">Ge Luo</div>
+                    <div class="student-topic">Model-inspired Network</div>
+                    <div class="student-info">PhD · 2025 – · Co-supervise with Prof. Wentao Zhao</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-name">Peiyao Yu</div>
+                    <div class="student-topic">All in One Image Restoration</div>
+                    <div class="student-info">Master · 2025 –</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-name">Wenjun Jia</div>
+                    <div class="student-topic">Multi-Modal Fusion</div>
+                    <div class="student-info">Master · 2025 –</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-name">Xiangshuai Song</div>
+                    <div class="student-topic">Clustering-inspired Deep Architecture</div>
+                    <div class="student-info">Master · 2025 –</div>
                 </div>
             </div>
-        </section>
 
-        <!-- Publications -->
-        <section id="publications" class="section" style="background: var(--bg-secondary);">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Selected Publications</h2>
-                    <p class="section-subtitle">Representative works in journals and conferences</p>
+            <h2 class="section-title" style="margin-top: 40px;">Former Students</h2>
+            <div class="student-grid">
+                <div class="student-card">
+                    <div class="student-name">Xiao Liu</div>
+                    <div class="student-topic">Graph Adversarial Attack</div>
+                    <div class="student-info">PhD · 2019 – 2024 · Co-supervise with Prof. Wentao Zhao</div>
                 </div>
-                <div class="pub-list">
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/TPAMI2025.png" alt="DExNet" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">1</span>
-                            <h3 class="pub-title">A Lightweight Deep Exclusion Unfolding Network for Single Image Reflection Removal</h3>
-                            <p class="pub-authors"><strong>Jun-Jie Huang</strong>, Tianrui Liu, Zihan Chen, Xinwang Liu, Meng Wang, and Pier Luigi Dragotti</p>
-                            <p class="pub-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence, 2025</p>
-                            <div class="pub-links">
-                                <a href="https://ieeexplore.ieee.org/abstract/document/10915715" class="pub-link" target="_blank">[PDF]</a>
-                                <a href="BibTeX/DExNet_2025.txt" class="pub-link">[BibTeX]</a>
-                                <a href="https://github.com/jjhuangcs/DExNet" class="pub-link" target="_blank">[Code]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/TIFS2025.png" alt="unFlowS" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">2</span>
-                            <h3 class="pub-title">unFlowS: An Unsupervised Construction Scheme of Flow Spectrum for Network Traffic Detection</h3>
-                            <p class="pub-authors">Luming Yang, Yongjun Wang, Lin Liu, <strong>Jun-Jie Huang</strong>, Jiangyong Shi, and Shaojing Fu</p>
-                            <p class="pub-venue">IEEE Transactions on Information Forensics and Security, 2025</p>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/TMM2025.png" alt="Multi-view Clustering" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">3</span>
-                            <h3 class="pub-title">Multi-view Clustering via Multi-stage Fusion</h3>
-                            <p class="pub-authors">Yu Gan, Yunning You, <strong>Jun-Jie Huang</strong>, Sen Xiang, Chang Tang, Wei Hu, and Shan An</p>
-                            <p class="pub-venue">IEEE Transactions on Multimedia, 2025</p>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/TGRS2024.png" alt="DeMPAA" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">4</span>
-                            <h3 class="pub-title">DeMPAA: Deployable Multi-Mini-Patch Adversarial Attack for Remote Sensing Image Classification</h3>
-                            <p class="pub-authors"><strong>Jun-Jie Huang</strong>#, Ziyue Wang#, Tianrui Liu*, Wenhan Luo, Zihan Chen, Wentao Zhao*, and Meng Wang</p>
-                            <p class="pub-venue">IEEE Transactions on Geoscience and Remote Sensing, 2024 (# co-first author, * corresponding author)</p>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/AGLLFA2024.png" alt="AGLLFA" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">5</span>
-                            <h3 class="pub-title">Multi-view subspace clustering via adaptive graph learning and late fusion alignment</h3>
-                            <p class="pub-authors">Chuan Tang, Kun Sun, Chang Tang, Xiao Zheng, Xinwang Liu, <strong>Jun-Jie Huang</strong>, Wei Zhang</p>
-                            <p class="pub-venue">Neural Networks, 2024</p>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/FRINet.png" alt="FRINet" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">6</span>
-                            <h3 class="pub-title">Learning-based Reconstruction of FRI Signals</h3>
-                            <p class="pub-authors">Vincent C. H. Leung, <strong>Jun-Jie Huang</strong>, Yonina C. Eldar, Pier Luigi Dragotti</p>
-                            <p class="pub-venue">IEEE Transactions on Signal Processing, 2023</p>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/pdf/2212.08758.pdf" class="pub-link" target="_blank">[PDF]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/FastDeconv.png" alt="FastDeconv" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">7</span>
-                            <h3 class="pub-title">A Fast Automatic Method for Deconvoluting Macro X-ray Fluorescence Data Collected from Easel Paintings</h3>
-                            <p class="pub-authors">Su Yan, <strong>Jun-Jie Huang</strong>, Herman Verinaz-Jadan, Nathan Daly, Catherine Higgit, and Pier Luigi Dragotti</p>
-                            <p class="pub-venue">IEEE Transactions on Computational Imaging, 2023</p>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/pdf/2210.17496.pdf" class="pub-link" target="_blank">[PDF]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/BITS.png" alt="BITS" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">8</span>
-                            <h3 class="pub-title">Revealing and Reconstructing Hidden or Lost Features in Art Investigation</h3>
-                            <p class="pub-authors">Barak Sober, Spike Bucklow, Nathan Daly, Ingrid Daubechies, Pier Luigi Dragotti, Catherine Higgit, <strong>Jun-Jie Huang</strong>, Aleksandra Pizurica, Wei Pu, Suzanne Reynold, Miguel Rodrigue, Carola-Bibiane Schonlieb, and Su Yan</p>
-                            <p class="pub-venue">IEEE BITS the Information Theory Magazine, 2022</p>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/WINNet.png" alt="WINNet" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">9</span>
-                            <h3 class="pub-title">WINNet: Wavelet-inspired Invertible Network for Image Denoising</h3>
-                            <p class="pub-authors"><strong>Jun-Jie Huang</strong>, and Pier Luigi Dragotti</p>
-                            <p class="pub-venue">IEEE Transactions on Image Processing, vol. 31, pp. 4377-4392, June 2022</p>
-                            <div class="pub-links">
-                                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9807636" class="pub-link" target="_blank">[PDF]</a>
-                                <a href="BibTeX/WINNet_2021.txt" class="pub-link">[BibTeX]</a>
-                                <a href="https://github.com/jjhuangcs/WINNet" class="pub-link" target="_blank">[Code]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/MixedXRay.png" alt="MixedXRay" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">10</span>
-                            <h3 class="pub-title">Mixed X-Ray Image Separation for Artworks with Concealed Designs</h3>
-                            <p class="pub-authors">Wei Pu#, <strong>Jun-Jie Huang#*</strong>, Barak Sober, Nathan Daly, Catherine Higgitt, Ingrid Daubechies, Pier Luigi Dragotti, and Miguel Rodigues</p>
-                            <p class="pub-venue">IEEE Transactions on Image Processing, vol. 31, pp. 4458-4473, June 2022 (# co-first author, * corresponding author)</p>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2201.09167" class="pub-link" target="_blank">[PDF]</a>
-                                <a href="BibTeX/MixedXRay_2022.txt" class="pub-link">[BibTeX]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/MLAM.png" alt="MLAM" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">11</span>
-                            <h3 class="pub-title">Meta-learning based Alternating Minimization Algorithm for Non-convex Optimization</h3>
-                            <p class="pub-authors">Jingyuan Xia, Shengxi Li, <strong>Jun-Jie Huang*</strong>, Imad Jaimoukha, and Deniz Gunduz</p>
-                            <p class="pub-venue">IEEE Transactions on Neural Networks and Learning Systems, 2022 (* corresponding author)</p>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/abs/2009.04899" class="pub-link" target="_blank">[PDF]</a>
-                                <a href="BibTeX/MLAM_2022.txt" class="pub-link">[BibTeX]</a>
-                                <a href="https://github.com/XiaGroup/MF_MLAM" class="pub-link" target="_blank">[Code]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/TIP_Vsum.png" alt="Video Summarization" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">12</span>
-                            <h3 class="pub-title">Video Summarization through Reinforcement Learning with a 3D Spatio-Temporal U-Net</h3>
-                            <p class="pub-authors">Tianrui Liu, Qingjie Meng, <strong>Jun-Jie Huang</strong>, Athanasios Vlontzos, Daniel Rueckert and Bernhard Kainz</p>
-                            <p class="pub-venue">IEEE Transactions on Image Processing, vol. 31, pp. 1573-1586, January 2022</p>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/pdf/2106.10528.pdf" class="pub-link" target="_blank">[PDF]</a>
-                                <a href="BibTeX/TIP_3DSTUNet_2021.txt" class="pub-link">[BibTeX]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/TCI_.png" alt="TCI" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">13</span>
-                            <h3 class="pub-title">When de Prony Met Leonardo: An Automatic Algorithm for Chemical Element Extraction from Macro X-ray Fluorescence Data</h3>
-                            <p class="pub-authors">Su Yan, <strong>Jun-Jie Huang*</strong>, Nathan Daly, Catherine Higgitt and Pier Luigi Dragotti</p>
-                            <p class="pub-venue">IEEE Transactions on Computational Imaging, vol. 7, pp. 908-924, 2021 (*Corresponding author)</p>
-                            <div class="pub-links">
-                                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9511278" class="pub-link" target="_blank">[PDF]</a>
-                                <a href="BibTeX/TCI_2021.txt" class="pub-link">[BibTeX]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/DeepAM.png" alt="DeepAM" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">14</span>
-                            <h3 class="pub-title">Learning Deep Analysis Dictionaries for Image Super-Resolution</h3>
-                            <p class="pub-authors"><strong>Jun-Jie Huang</strong>, and Pier Luigi Dragotti</p>
-                            <p class="pub-venue">IEEE Transactions on Signal Processing, vol. 68, pp. 6633-6648, 2020</p>
-                            <div class="pub-links">
-                                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9257106" class="pub-link" target="_blank">[PDF]</a>
-                                <a href="BibTeX/TSP_DeepAM_2020.txt" class="pub-link">[BibTeX]</a>
-                                <a href="https://github.com/jjhuangcs/DeepAM" class="pub-link" target="_blank">[Code]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/couple_overview.png" alt="Coupled Network" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">15</span>
-                            <h3 class="pub-title">Coupled Network for Robust Pedestrian Detection with Gated Multi-Layer Feature Extraction and Deformable Occlusion Handling</h3>
-                            <p class="pub-authors">Tianrui Liu, Wenhan Luo, Lin Ma, <strong>Jun-Jie Huang*</strong>, Tania Stathaki and Tianhong Dai</p>
-                            <p class="pub-venue">IEEE Transactions on Image Processing, vol. 30, pp. 754-766, 2021 (*Corresponding author)</p>
-                            <div class="pub-links">
-                                <a href="https://arxiv.org/pdf/1912.08661.pdf" class="pub-link" target="_blank">[PDF]</a>
-                                <a href="BibTeX/SP_DeepPR_2020.txt" class="pub-link">[BibTeX]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/DeepPR.png" alt="DeepPR" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">16</span>
-                            <h3 class="pub-title">Deep Phase Retrieval: Analyzing Over-Parameterization in Phase Retrieval</h3>
-                            <p class="pub-authors">Qi Yu, <strong>Jun-Jie Huang*</strong>, Jubo Zhu, Wei Dai and Pier Luigi Dragotti</p>
-                            <p class="pub-venue">Signal Processing, vol. 180, pp. 107866, 2021 (*Corresponding author)</p>
-                            <div class="pub-links">
-                                <a href="https://authors.elsevier.com/a/1c1DtbZX51JJc" class="pub-link" target="_blank">[PDF]</a>
-                                <a href="BibTeX/SP_DeepPR_2020.txt" class="pub-link">[BibTeX]</a>
-                                <a href="https://github.com/qy2116/DeepPR" class="pub-link" target="_blank">[Code]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/PRINCE.png" alt="PRINCE" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">17</span>
-                            <h3 class="pub-title">Photo Realistic Image Completion via Dense Correspondence</h3>
-                            <p class="pub-authors"><strong>Jun-Jie Huang</strong> and Pier Luigi Dragotti</p>
-                            <p class="pub-venue">IEEE Transactions on Image Processing, vol. 27, no. 11, pp. 5234-5247, November 2018</p>
-                            <div class="pub-links">
-                                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8410011" class="pub-link" target="_blank">[PDF]</a>
-                                <a href="BibTeX/TIP_Completion_2018.txt" class="pub-link">[BibTeX]</a>
-                                <a href="https://youtu.be/C_s8sHjlx6E" class="pub-link" target="_blank">[Video]</a>
-                                <a href="Demo/PRINCE_v1.0.zip" class="pub-link">[Code]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/Picture2.png" alt="SRHDT" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">18</span>
-                            <h3 class="pub-title">Learning Hierarchical Decision Trees for Single Image Super-Resolution</h3>
-                            <p class="pub-authors"><strong>Jun-Jie Huang</strong> and Wan-Chi Siu</p>
-                            <p class="pub-venue">IEEE Transactions on Circuits and Systems for Video Technology, vol. 27, no. 5, pp. 937-950, 2017</p>
-                            <div class="pub-links">
-                                <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7368907" class="pub-link" target="_blank">[PDF]</a>
-                                <a href="BibTeX/TCSVT_2016.txt" class="pub-link">[BibTeX]</a>
-                                <a href="Demo/SRHDT.zip" class="pub-link">[Code]</a>
-                                <a href="Demo/SRHDT_Results.xlsx" class="pub-link">[Results]</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pub-card">
-                        <img src="./Jun-Jie Huang_files/FIRF.png" alt="FIRF" class="pub-thumb">
-                        <div class="pub-content">
-                            <span class="pub-number">19</span>
-                            <h3 class="pub-title">Fast Image Interpolation via Random Forests</h3>
-                            <p class="pub-authors"><strong>Jun-Jie Huang</strong>, Wan-Chi Siu and Tian-Rui Liu</p>
-                            <p class="pub-venue">IEEE Transactions on Image Processing, vol. 24, no. 10, pp. 3232-3245, 2015</p>
-                            <div class="pub-links">
-                                <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7117405" class="pub-link" target="_blank">[PDF]</a>
-                                <a href="BibTeX/TIP_2015.txt" class="pub-link">[BibTeX]</a>
-                                <a href="http://www.eie.polyu.edu.hk/~wcsiu/softmodule/10/fast_image_interpolation.htm" class="pub-link" target="_blank">[Project Page]</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="student-card">
+                    <div class="student-name">Ziyue Wang</div>
+                    <div class="student-topic">Physical World Adversarial Patch Attack for Remote Sensing Images</div>
+                    <div class="student-info">Master · 2021 – 2023 · Co-supervise with Prof. Wentao Zhao</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-name">Zihan Chen</div>
+                    <div class="student-topic">Image Hiding based on Invertible Neural Network</div>
+                    <div class="student-info">Master · 2021 – 2023 · Co-supervise with Prof. Wentao Zhao</div>
+                </div>
+                <div class="student-card">
+                    <div class="student-name">Yankun Wang</div>
+                    <div class="student-topic">Website Fingerprinting Defense for Tor Network</div>
+                    <div class="student-info">Master · 2021 – 2023 · Co-supervise with Prof. Yongjun Wang</div>
                 </div>
             </div>
         </section>
 
         <!-- Academic Talks -->
-        <section id="talks" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Academic Talks</h2>
-                    <p class="section-subtitle">Invited presentations and seminars</p>
+        <section class="section">
+            <h2 class="section-title">Academic Talks</h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <span class="news-date">2024-07</span>
+                    <span class="news-text">
+                        <a href="https://github.com/jjhuangcs/Slides/INN_for_Inverse_final.pdf" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600;">Invertible Neural Networks and Their Applications</a>, 
+                        IEEE SPS Webinar
+                    </span>
                 </div>
-                <div class="talks-list">
-                    <div class="talk-item">
-                        <div class="talk-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                        </div>
-                        <div class="talk-content">
-                            <h4><a href="https://github.com/jjhuangcs/Slides/INN_for_Inverse_final.pdf" target="_blank">Invertible Neural Networks and Their Applications</a></h4>
-                            <p class="talk-venue">IEEE SPS Webinar</p>
-                            <p class="talk-date">July 2024</p>
-                        </div>
-                    </div>
+            </div>
+        </section>
+
+        <!-- Awards -->
+        <section class="section" id="awards">
+            <h2 class="section-title">Selected Awards</h2>
+            <div class="award-list">
+                <div class="award-item">
+                    <span class="award-year">2022</span>
+                    <span class="award-text">Top-notch Talent Support Program of NUDT (NUDT拔尖人才计划)</span>
+                </div>
+                <div class="award-item">
+                    <span class="award-year">2021</span>
+                    <span class="award-text">Hundred Talent Program of Hunan Province, China (湖南"百人计划"海外高层次引进人才)</span>
+                </div>
+                <div class="award-item">
+                    <span class="award-year">2019</span>
+                    <span class="award-text">Chinese Government Award for Outstanding Self-financed Students Abroad (国家优秀自费留学生奖学金)</span>
                 </div>
             </div>
         </section>
 
         <!-- Teaching -->
-        <section id="teaching" class="section" style="background: var(--bg-secondary);">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Teaching</h2>
-                    <p class="section-subtitle">Courses taught at NUDT</p>
+        <section class="section" id="teaching">
+            <h2 class="section-title">Teaching</h2>
+            <div class="teaching-grid">
+                <div class="teaching-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <h3>Convex Optimization</h3>
+                    <p>Spring 2023, 2024</p>
                 </div>
-                <div class="teaching-grid">
-                    <div class="teaching-card">
-                        <div class="teaching-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                        </div>
-                        <h3>Convex Optimization</h3>
-                        <p class="teaching-semester">Spring 2023, 2024</p>
-                        <p class="teaching-desc">Graduate-level course covering convex analysis, optimization algorithms, and applications in machine learning and signal processing.</p>
-                    </div>
-                    <div class="teaching-card">
-                        <div class="teaching-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                        </div>
-                        <h3>Machine Learning</h3>
-                        <p class="teaching-semester">Fall 2023</p>
-                        <p class="teaching-desc">Introduction to machine learning fundamentals, including supervised/unsupervised learning, deep learning, and model-based approaches.</p>
-                    </div>
+                <div class="teaching-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <h3>Machine Learning</h3>
+                    <p>Fall 2023</p>
                 </div>
             </div>
         </section>
-    </main>
+
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <p>© 2026 Jun-Jie Huang. All rights reserved.</p>
-                    <p class="footer-update">Last updated: August 2026</p>
-                </div>
-                <div class="footer-right">
-                    <a href="#home" class="back-to-top">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
-                        Back to Top
-                    </a>
-                </div>
-            </div>
-        </div>
+        <p>© 2024 Jun-Jie Huang · Last updated August 2024</p>
+        <p style="margin-top: 10px;">
+            Looking for highly motivated Master students. 
+            <a href="mailto:j.j.huang123@qq.com">Contact me →</a>
+        </p>
     </footer>
 
+    <!-- Mobile Navigation Toggle -->
     <script>
-        // Theme Toggle
-        const themeToggle = document.getElementById('themeToggle');
-        const body = document.body;
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
 
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'light') {
-            body.classList.add('light-mode');
-        }
-
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('light-mode');
-            const isLight = body.classList.contains('light-mode');
-            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
 
-        // Mobile Menu
-        const menuToggle = document.getElementById('menuToggle');
-        const navMenu = document.getElementById('navMenu');
-
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-link').forEach(link => {
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
+                navLinks.classList.remove('active');
             });
         });
 
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    const headerOffset = 80;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
-                }
-            });
-        });
-
-        // Active nav link
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-link');
-
+        // Navbar background on scroll
         window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
-            });
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Intersection Observer for animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.pub-card, .award-card, .student-card, .teaching-card, .talk-item, .news-item').forEach(el => {
-            observer.observe(el);
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 50) {
+                nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
         });
     </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22940424-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-22940424-1');
+    </script>
+
 </body>
 </html>
